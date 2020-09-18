@@ -1,0 +1,97 @@
+.ex-1-square:hover{
+    background-color: red;
+    transition: background-color 3s;
+}
+
+.ex-2-square:active{
+    width: 100%;
+    transition: width 3s;
+}
+
+.ex-3-square:hover{
+    border-radius: 100%;
+    transition: border-radius 6s;
+}
+
+.ex-4-square{
+    transition: opacity 3s;
+}
+
+.ex-4-square:hover{
+    opacity: 0;
+}
+
+.ex-5-square{
+    transition: height 3s, width 3s;
+}
+
+.ex-5-square:hover{
+    height: 100px;
+    width: 100px;
+}
+
+.ex-6-img:hover{
+    filter: grayscale(1);
+}
+
+.ex-7-img {
+    transition: 1s;
+}
+
+.ex-7-img:hover {
+    filter: grayscale(100%) opacity(50%);
+}
+
+.ex-8-img {
+    transition: all 4s;
+}
+
+.ex-8-img:hover {
+    border-radius: 55%;
+    filter: grayscale(100%);
+    filter: opacity(50%);
+}
+
+.ex-9-img {
+    transition: all 4s;
+}
+
+.ex-9-img:hover {
+    border-radius: 25%;
+    filter: grayscale(100%);
+    filter: sepia(100%);
+    transform: scale(1.5);
+}
+
+.ex-10-icon:hover{
+    animation: circleMoving  1s infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes circleMoving {
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+
+.ex-11-icon:hover{
+    animation: circleMoving2  2s;
+    animation-timing-function: linear;
+}
+
+@keyframes circleMoving2 {
+    0%  {transform: rotate(0deg)}
+    80% {transform: rotate(270deg);}
+    100%{transform: rotate(0);}
+}
+
+.ex-12-button:hover{
+
+}
+
+.ex-12-top-white{
+
+}
+
+.ex-12-botton-white{
+
+}
