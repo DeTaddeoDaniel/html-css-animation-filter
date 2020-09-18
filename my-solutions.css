@@ -120,12 +120,12 @@
 }
 
 .ex-13-button:hover .ex-13-top-white{
-    animation: move-top2 8s infinite;
+    animation: move-top2 8s linear infinite;
     background-color: red;
 }
 
 .ex-13-button:hover .ex-13-bottom-white{
-    animation: exercise 8s infinite;
+    animation: move-exercise 8s linear infinite;
     /* animation: extra 8s infinite; */
     background-color: green;
 }
@@ -201,26 +201,26 @@
 
 @keyframes move-exercise {
     0%{
-        left: 30%;
+        left: 70%; top: calc(100% - 10px);
     }
 
-    /* 20%{
-        left: calc(100% - 30px); top: calc(0% - 10px);
-    } */
+    20%{
+        left:-30px; top: calc(100% - 10px);
+    }
 
-    /* 40%{
+    40%{
+        left:-30px; top: -10px;
+    }
+
+    60%{
+        left: calc(100% - 30px); top: -10px;
+    }
+
+    80%{
         left: calc(100% - 30px); top: calc(100% - 10px);
-    } */
+    }
 
-    /* 60%{
-        left: calc(-30px); top: calc(100% - 10px);
-    } */
-
-    /* 80%{
-        left: calc(-30px); top: calc(-10px);
-    } */
-
-    /* 100%{
-        left: 10%;
-    } */
+    100%{
+        left: calc(70%); top: calc(100% - 10px);
+    }
 }
